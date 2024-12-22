@@ -1,5 +1,3 @@
-import dynamic from 'next/dynamic';
-
 // import { LandingWhyUs } from '@/app/components/landing/WhyUs';
 // import { LandingTrustedCompanies } from '@/app/components/landing/TrustedCompanies';
 // import { LandingVideoSection } from '@/app/components/landing/VideoSection';

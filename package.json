@@ -16,6 +16,8 @@
   "dependencies": {
     "@hookform/error-message": "^2.0.1",
     "@hookform/resolvers": "^3.9.0",
+    "@tanstack/react-query": "^5.62.8",
+    "@tanstack/react-query-devtools": "^5.62.8",
     "axios": "^1.6.3",
     "class-variance-authority": "^0.7.0",
     "flickity": "^3.0.0",
@@ -31,6 +33,7 @@
     "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.62.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

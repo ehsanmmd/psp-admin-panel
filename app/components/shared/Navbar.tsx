@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 
 const buttonStyle =
@@ -18,10 +19,12 @@ export const Navbar = () => {
           Setting
         </Link>
       </div>
-      <img
+
+      <Image
         src="https://pspexpress.com/wp-content/uploads/2023/06/PSP-Logo-01-1-1.svg"
-        alt="description"
+        alt="psp"
         width={150}
+        height={50}
       />
     </nav>
   );
