@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'YekanBakhNumb';
+  src: url('/fonts/YekanBakhFaNum-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'YekanBakhNumbBold';
+  src: url('/fonts/YekanBakhFaNum-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'YekanBakhNumbExtraBold';
+  src: url('/fonts/YekanBakhFaNum-ExtraBold.ttf') format('truetype');
+}
+
+@layer components {
+  .dir-left {
+    direction: ltr;
+  }
+
+  .dir-right {
+    direction: rtl;
+  }
+
+  .plans-period-title {
+    @apply py-[10px] px-[14px] rounded-md cursor-pointer leading-6 font-semibold w-full md:w-auto;
+  }
+
+  .plans-title {
+    @apply md:w-[200px] lg:w-[263px] h-[50px] md:ps-3 lg:ps-6 py-3 tracking-tight md:text-sm lg:text-base font-semibold text-gray-700 leading-[26px] rounded-s-lg;
+  }
+
+  .plans-item {
+    @apply w-full md:h-[50px] flex flex-col gap-2 justify-center items-center py-3 tracking-tight text-center text-sm md:text-base text-gray-700 leading-[26px];
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'YekanBakhNumb';
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: #35323e;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(10px);
+}
+
+.hamburger-bottom {
+  transform: translateY(20px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.flickity-enabled:focus {
+  outline: none;
+}
