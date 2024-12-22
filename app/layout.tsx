@@ -3,6 +3,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import './globals.css';
 import { SiteProvider } from './context/siteContext';
+import { Navbar } from '@/app/components/shared/Navbar';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -33,6 +34,7 @@ const RootLayout: React.FC<LayoutProps> = ({ children }) => {
               style={{ display: 'none', visibility: 'hidden' }}
             ></iframe>
           </noscript>
+          <Navbar />
           {children}
         </body>
       </html>

@@ -13,14 +13,10 @@ import dynamic from 'next/dynamic';
 
 export default function Home() {
   return (
-    <main>
-      {/* <DynamicHero />
-      <LandingWhyUs />
-      <LandingTrustedCompanies />
-      <LandingVideoSection />
-      <LandingLoginAdmin />
-      <DynamicFAQs />
-      <DynamicAboutAccounting /> */}
+    <main className="h-[90vh] flex justify-center items-center">
+      <h1 className="text-[100px] font-semibold text-neutral-600">
+        Admin Panel
+      </h1>
     </main>
   );
 }
