@@ -17,11 +17,11 @@ const getAllPosts = (): Promise<AllPostsData[]> => {
 };
 
 export const useGetAllPosts = () => {
-  const { data, isLoading, refetch, isFetched } = useQuery({
+  const { data, isLoading, error } = useQuery({
     queryKey: [E_Posts],
     queryFn: getAllPosts,
     refetchOnWindowFocus: false,
     refetchOnMount: false,
   });
-  return { data, isLoading, refetch, isFetched };
+  return { data, isLoading, error };
 };

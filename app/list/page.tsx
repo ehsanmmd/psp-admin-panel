@@ -3,10 +3,14 @@ import Loading from '@/app/loading';
 import { useGetAllPosts } from '@/app/services/api/endpoints/posts/useGetAllPosts';
 
 export default function List() {
-  const { data, isLoading } = useGetAllPosts();
+  const { data, isLoading, error } = useGetAllPosts();
 
   if (isLoading) {
     return <Loading />;
+  }
+
+  if (error) {
+    return <p>Error: {error.message}</p>;
   }
 
   if (!data) {
